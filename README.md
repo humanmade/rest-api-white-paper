@@ -9,7 +9,9 @@ To translate the white paper, please create a sub-directory of the project under
 
 You can use the [ai files in the resources](resources/) folder to create translations of any diagrams (nb: fonts are proprietary and not included).
 
-If you wish to create a PDF version please [contact us for InDesign files](mailto:hello@hmn.md)
+If you wish to create a PDF version please [contact us for InDesign files](mailto:hello@hmn.md).
+
+Add a list of translators to your locale's version of the [readme](https://github.com/humanmade/rest-api-white-paper/blob/master/en/readme.md).
 
 ## License
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
