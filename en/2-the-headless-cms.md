@@ -20,6 +20,7 @@ By decoupling content management from frontend display, a headless CMS allows de
 When you use a headless CMS there are two components: the CMS itself and the frontend display. The CMS focuses only on content management, without having to assemble formatted responses, while the client-side technology can quickly display that data in the browser. Using client-side technologies for display means that in-browser experiences are fast, acting in real-time, without having to wait for PHP queries to retrieve information from the database. There is a significant increase in performance when using JavaScript vs PHP: Node.js, for example, [can handle many more requests than PHP due to its asynchronous event-driven nature](http://www.hostingadvice.com/blog/comparing-node-js-vs-php-performance/). This can be especially useful when an application requires many connections open simultaneously.
 
 ## One content management system, multiple frontends
+![a diagram showing WordPress delivering content to a phone, desktop, tablet, and watch](images/multidevice.png)
 
 With a traditional, monolithic CMS, data is simply displayed by the CMS itself. Data stored in a headless CMS is available for display in any context. You may want to use it for a website now, but later you may decide to use the same data for a desktop or touch screen application. The stored data is always available via the API.
 
