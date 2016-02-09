@@ -6,7 +6,7 @@ This happens via a request/response mechanism between the server and the client.
 
 REST requests interact with the resources in your application (e.g. a Post or Page). These interactions are typically Reading, Creating, Updating, or Deleting. Combined with HTTP, REST requests are formed using four verbs:
 
-- POST: Create a resource- GET: Retrieve a resource- PUT: Update a resource- DELETE: Delete a resource
+- ```POST```: Create a resource- ```GET```: Retrieve a resource- ```PUT```: Update a resource- ```DELETE```: Delete a resource
 
 The data retrieved is supplied in a machine-readable format, often JSON in modern web applications.
 > REST was proposed by Roy Fielding in his 2000 dissertation [Architectural Styles and the Design of Network- based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/abstract.htm).
