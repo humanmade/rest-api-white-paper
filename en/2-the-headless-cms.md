@@ -25,4 +25,6 @@ With a traditional, monolithic CMS, data is simply displayed by the CMS itself. 
 
 ## Multi-service content pipelines
 
+![a diagram showing WordPress as a translation layer in a larger content authoring platform](images/larger content authoring.png)
+
 A headless CMS can be used to store all of the data for one site or application, or it can just be one element of a larger application that retrieves and aggregates data. This means that data can be integrated into existing workflows as just one layer. For example, it could be used just as a layer for translating content which is then pushed to another CMS.
