@@ -5,7 +5,7 @@ Welcome to the online repository for *[Talking to 25% of the Web: an in-depth re
 ## Translations
 We encourage you to translate the REST API white paper and make it available in your own language. Send us a pull request and we'll add it to the main repo.
 
-To translate the white paper, please create a sub-directory of the project under Working Translations, giving it the correct ISO 639-3 code. Find the correct code for your language [here](https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes), and submit a pull request. Once the translation has reached a release / first full translation, we'll move it to its own subdirectory at the top level, and subsequent updates will happen in that location.
+To translate the white paper, please create a sub-directory of the project under Working Translations, giving it the correct ISO 639-3 code (find the correct code for your language [here](https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes)), and submit a pull request. Once the translation has reached a release / first full translation, we'll move it to its own subdirectory at the top level, and subsequent updates will happen in that location.
 
 You can use the [ai files in the resources](resources/) folder to create translations of any diagrams (nb: fonts are proprietary and not included).
 
