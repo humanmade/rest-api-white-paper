@@ -2,7 +2,7 @@
 
 ![a diagram showing the architecture of the REST API](images/REST API diagram.png)
 
-We look at the specifics of the WordPress REST API, including its infrastructure and endpoints, its authentication methods and the concept of hypermedia. We also introduce you to the team behind it.
+*We look at the specifics of the WordPress REST API, including its infrastructure and endpoints, its authentication methods and the concept of hypermedia. We also introduce you to the team behind it.*
 
 The WordPress REST API allows access to a website’s data, including users, posts, and taxonomies. In the past, developers needed to use WordPress’ built-in theme system and administration panel to display and edit content on
 a site.

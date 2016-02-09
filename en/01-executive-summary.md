@@ -1,6 +1,6 @@
 # Executive Summary
 
-WordPress is an open-source content management system which is used to power millions of websites and blogs, and an increasing number of web applications.
+*WordPress is an open-source content management system which is used to power millions of websites and blogs, and an increasing number of web applications.*
 
 [It currently powers more than 25% of the top 10 million websites on the Internet](http://w3techs.com/technologies/history_overview/content_management/all/y). WordPress’ usability, extensibility, and mature development community make it a popular choice for web projects of all sizes.
 

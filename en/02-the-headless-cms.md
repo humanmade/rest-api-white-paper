@@ -1,6 +1,6 @@
 # The Headless CMS
 
-We look at the difference between a traditional and a headless CMS, how a headless CMS slots into web development, and discuss some of the advantages of using a headless CMS for your web project.
+*We look at the difference between a traditional and a headless CMS, how a headless CMS slots into web development, and discuss some of the advantages of using a headless CMS for your web project.*
 
 ![an diagram showing the structure of a monolithic CMS vs a headless CMS](images/monolithic.png)
 
