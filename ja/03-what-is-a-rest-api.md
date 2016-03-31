@@ -36,13 +36,11 @@ APIがRESTfulであるには以下の要件を満たしている必要があり�
 
 オープンなAPIとは、開発者が彼らのソフトウエアやアプリケーションから、プロプライエタリな情報にアクセスし使用するために一般に公開されているAPIのことです。RESTは、ウェブのオープンさの上に構築されたHTTPを使用していることにより、オープンなAPIを作るための理想的な設計方法です。オープンなREST APIを使用するに開発者に唯一必要なことはHTTPリクエストを送ることです。
 
-By making data available for developers to use in their own applications, open APIs are transforming the internet. Developers can access data across services, creating applications that aggregate information from different providers. The impact of APIs cannot be overestimated; they are transforming the way businesses and services are run. For example:
+オープンなAPIは、開発者に対して彼らのアプリケーションでデータを使用できるようにすることにより、インターネットに変化をもたらします。開発者は異なるサービス間をまたがってデータにアクセスできるようになり、異なるプロバイダーからデータを収集するアプリケーションを作ることが可能です。APIがもたらすインパクトは過小評価できません。それらはビジネスの方法やサービスを以下の例のように革新していくでしょう。
 
-オープンなAPIは、開発者に対して彼らのアプリケーションでデータを使用できるようにすることにより、インターネットに変化をもたらします。開発者は異なるサービス間をまたがってデータにアクセスできるようになり、異なるプロバイダーからデータを収集するアプリケーションを作ることが可能です。APIがもたらすインパクトは過小評価できません。それらは
+- [募金プラットフォームのJustGivingでは、売り上げの25%がAPI経由によるものである](http://www.3scale.net/2014/08/justgiving-api-grows-giving-non-profits-profits-alike/)
+- [2011年にTwitter社は、同社のAPIを使用した100万以上のサートパーティー製アプリケーションが登録されていることを発表した](http://blog.twitter.com/2011/one-million-registered-twitter-apps)
+- [DSkyscannerによって提供されているデータフィードのAPIは、Hitlist、Go Euro、Pintripsなどのスタートアップ企業で利用されている](http://www.programmableweb.com/news/why-skyscanner-api-appeals-to-travel-startups/elsewhere-web/2015/11/21)
+- [ヒルトンは同社のアプリ、Hilton Honors Appから、UberのAPIを使用してゲストが配車の予約ができるようにした](http://techcrunch.com/2015/09/01/checking-out-hiltons-app-now-lets-you-get-an-uber/)
 
-- [Around 25% of annual revenue of the fundraising platform JustGiving is API-driven](http://www.3scale.net/2014/08/justgiving-api-grows-giving-non-profits-profits-alike/)
-- In 2011, [Twitter reported that they had more than one million applications registered, with a number of entire companies built off the API](http://blog.twitter.com/2011/one-million-registered-twitter-apps)
-- [Data feeds from the Skyscanner API are used by startups like Hitlist, Go Euro, and Pintrips](http://www.programmableweb.com/news/why-skyscanner-api-appeals-to-travel-startups/elsewhere-web/2015/11/21)
-- [Hilton is making use of Uber’s API to allow guests to book rides from the Hilton Honors App](http://techcrunch.com/2015/09/01/checking-out-hiltons-app-now-lets-you-get-an-uber/)
-
-This aggregation of public data across different platforms enables the creation of feature-rich, powerful applications that do more than any individual product or service could do on its own.
+異なるプラットフォームをまたがってデータのやり取りができるようになることは、独立したプロダクトやサービスよりも、より素晴らしいユーザー体験を提供することを可能にします。
