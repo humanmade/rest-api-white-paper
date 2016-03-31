@@ -1,6 +1,16 @@
-# Work with us[Human Made](http://hmn.md) is an enterprise-level WordPress development firm, based in the UK but with employees and clients worldwide.
+# 一緒に働きませんか？
 
-Our clients include NewsUK, AirBnB, Skype, and Yell. We’re the people behind Nomadbase and Happytables. Our developers have led the development of the WordPress REST API and we’re already making use of it in our own products and in client projects.Want to use the WordPress REST API in your project? Contact Human Made for:- enterprise-level development- bespoke training 
-- consultancy- hosting
+[Human Made](http://hmn.md) は、エンタープライズ向けの WordPress 開発会社です。本拠地をイギリスに置いていますが、従業員やクライアント企業は世界中に散らばっている分散型企業です。
 
-Email us [hello@hmn.md](mailto:hello@hmn.md) or give us a call at +44 (0) 1629 628082
+私たちのクライアントには、NewsUK、AirBnB、Skype、Yellなどが挙げられます。Nomadbase や Happytables の運営会社でもあります。開発陣は WordPress REST API の開発をリードしながら、この API を利用して私たちのプロダクトやクライアントのプロジェクトを進めています。
+
+WordPress REST API を利用したプロジェクトの
+
+- エンタープライズレベルの開発
+- プロジェクトに合わせたトレーニング
+- コンサルティング
+- ホスティング
+
+をお考えなら、Human Made にご連絡を。
+メール: [hello@hmn.md](mailto:hello@hmn.md)
+電話: +44 (0) 1629 628082
