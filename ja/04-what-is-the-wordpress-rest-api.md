@@ -1,34 +1,38 @@
-# What is the WordPress REST API?
+# WordPress REST API とは何か
 
-![a diagram showing the architecture of the REST API](images/REST API diagram.png)
+![REST API のアーキテクチャの図](images/REST API diagram.png)
 
-*We look at the specifics of the WordPress REST API, including its infrastructure and endpoints, its authentication methods and the concept of hypermedia. We also introduce you to the team behind it.*
+*WordPress REST API の詳細を見ていきましょう。この章では、API のインフラ、エンドポイント、認証方法、そして「ハイパーメディア」のコンセプトについてご説明しながら、開発チームもご紹介します。
 
-The WordPress REST API allows access to a website’s data, including users, posts, and taxonomies. In the past, developers needed to use WordPress’ built-in theme system and administration panel to display and edit content on
-a site.
+WordPress REST API を利用すると、ユーザー、投稿、タクソノミなどのウェブサイトのデータへのアクセスが可能になります。これまでは、サイトのコンテンツを表示したり編集したりしたいとき、開発者は WordPress のテーマを作ったり管理画面にログインしなければなりませんでした。
 
-The REST API decouples the WordPress backend from the frontend, allowing developers to use it as an application platform: WordPress is used for data entry and storage, and the frontend can be built in any programming language. The REST API transforms WordPress into a headless CMS.
+REST API は、 WordPress のバックエンドをフロントエンドから切り離します。その結果、開発者は WordPress をアプリケーションプラットフォームとして使うことができるようになります。WordPress はデータの入力とストレージのために使われ、フロントエンドは好きなプログラミング言語を使って作成することができるようになったのです。
 
-## Infrastructure
-WordPress 4.4 contains the infrastructure for the WordPress REST API. This can be thought of as a construction kit for RESTful APIs in WordPress: it enables developers to build their own REST APIs, handling things like API discovery, request routing, arguments, JSON serialisation/ deserialisation, and response codes. If you are building a website, application, theme or plugin, you can use the API by adding your own [custom endpoints](http://v2.wp-api.org/extending/adding/).
+## インフラストラクチャー
 
-The REST API decouples the WordPress backend from the frontend, transforming it into a headless CMS.
+WordPress 4.4 は WordPress REST API のインフラを搭載しています。このインフラとは、開発者が独自の  RESTful API を構築する際のスターターキットとして考えることができます。つまり、API 探索、リクエストのルーティング、JSON のシリアライズやデシリアライズ、レスポンスコードなどを扱うためのベースということです。ウェブサイトやアプリケーション、テーマやプラグインを作成する際、このベースの上に独自の[カスタムエンドポイントを作成](http://ja.wp-api.org/extending/adding/)して、 API の利用を始めることができます。
 
-## Endpoints
-Endpoints are functions that are available through the API: they’re the places where developers can do something with the CMS, whether that’s creating, retrieving, updating or deleting (CRUD) data. This includes the four core data types in WordPress (posts, comments, terms, and users) initially, although these will grow in future versions of WordPress to support all data on the site.
+バックエンドがフロントエンドから切り離され、WordPress はヘッドレス CMS になる。
 
-## Authentication
-A major challenge around building a REST API is authentication: how does an API know that a user should be allowed to update content on a site, for example? Who should be allowed to retrieve data? Under what conditions?
+## エンドポイント
 
-The WordPress REST API uses two forms of authentication:
-- **Cookie** - this is the basic authentication method used in WordPress. When you log into your dashboard a cookie is set in your browser. This method is only viable when the current user is logged into WordPress and that user has the capability to perform the action requested.
-- **OAuth** - this is the main authentication method used for external clients, i.e. any third-party site or application that wants to interact with the API. With OAuth, logged in users can authorise clients to act on their behalf. Clients are issued with OAuth tokens so they can interact with the API. The REST API uses OAuth 1.0a so that it can be used by all WordPress websites; OAuth 2.0 requires HTTPS but WordPress does not.
+エンドポイントとは、API を通じて利用可能な機能のことです。開発者が WordPress のデータを作成、取得、更新、削除（CRUD）するための場所です。現在は、WordPress の中心的なデータタイプである投稿、コメント、ターム、ユーザーの4種が対象に含まれており、将来のバージョンでは、サイトのすべてのデータのためのエンドポイントが導入されます。
 
-In addition, there is a Basic Authentication method for external clients. However, this is only recommended for development environments as it involves passing your username and password on every request, and giving your credentials to clients.
+## 認証
 
-## The Team
+REST API を構築するにあたって大きな挑戦となるのが認証です。たとえば、あるユーザーに、サイトのコンテンツ更新を許可するか否か、API はどのように判断するべきなのでしょうか。データの取得を許されているのはどのユーザーなのか、その判断方法や条件について見ていきましょう。
 
-The WordPress REST API has contributions from 72 developers. However, the team has had four core members:
+WordPress REST API では、2つの認証方法を利用できます。
+
+- **クッキー** - すでに WordPress で利用されている認証方法の転用です。ユーザーが WordPress の管理画面にログインするときに、ブラウザにセットされるクッキーを利用して API にアクセスします。この方法は、ユーザーがブラウザを利用して WordPress サイトにログインしており、かつ、そのログインユーザーが権限を持っている時にのみ、APIを通じたアクションが可能になります。
+- **OAuth** - OAuth 認証は、サードパーティのサイトやアプリケーションなどの外部クライアントが API と通信する際に利用する認証方法です。OAuth 認証では、WordPress サイトにログインしているユーザーが、外部クライアントを認証し、ユーザー自身に代わってアクションをすることを許可します。クライアントには、OAuth トークンが発行され、クライアントはこのトークンを利用して API と通信します。WordPress REST API は、OAuth 1.0a を利用しており、すべての WordPress サイトが OAuth 認証を利用できます。（OAuth 2.0 にしてしまうと、HTTPS通信が必須になり、HTTP を許容するWordPress にはそぐわないためです。）
+
+外部クライアントが利用できる方法には、ベーシック認証もあります。ですが、ベーシック認証の場合には、リクエストを行なうたびに
+ユーザー名とパスワードをクライアントに送信しなければならないため、開発環境のみで利用することを推奨しています。
+
+## 開発チーム
+WordPress REST API には72名のコントリビューターがいます。なかでもコアな貢献者は以下の4名です。
+
 - Ryan McCue (Human Made) Co-Lead of the REST API
 - Rachel Baker (Wirecutter) Co-Lead of the REST API
 - Joe Hoyle (Human Made)
