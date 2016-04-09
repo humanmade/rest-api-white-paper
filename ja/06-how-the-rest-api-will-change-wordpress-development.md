@@ -1,10 +1,29 @@
-# How the REST API will change WordPress development
+# REST APIがどのようにWordPress開発を変えるか
 
-*We look at some of the ways that the REST API will change WordPress development and the impact that this will have both for WordPress-based websites and applications, and for the people creating them.*## WordPress as part of a larger stackWordPress has a familiar and easy to use user interface which authors want to use for managing and publishing content. With the REST API, you can provide this interface to your authors without compromising on the rest of your stack.
+*REST APIが、WordPress開発の手法や、WordPressベースのウェブサイト、そしてアプリケーションをそれらを作る人にとってどのように変えていくかを見ていきましょう。*
 
-##New approaches to project managementThe separation of concerns that come with a REST API project mean approaching project management in a new way. Developers will independently focus on different aspects of the website or application, working with live data retrieved using the API.
-## The WordPress developer as a backend specialistThere will be an increase in the number of WordPress developers who are backend specialists, focusing on the admin screens and the database, while leaving the frontend layer to frontend developers.## Permeation of WordPress outside of PHP communitiesAs a single module in a larger stack, WordPress will be used increasingly outside of its traditional community. The REST API allows developers to create websites and applications in any language without having to roll their own CMS.
-## The emergence of funnelled, role-based adminsThe REST API allows developers to create funnelled administration experiences that focus on a particular user doing particular actions. These focused admins will remove clutter and empower the user to do exactly what they need to do.
-## The enhancement of built-in WordPress functionalityThe REST API makes it easier for developers to enhance functionality in the WordPress admin. Developers can create client-side features in the admin that are more advanced and more performant than can be achieved with PHP.
+## より大きなウェブサイトの一部としてのWordPress
+
+WordPressは、コンンテンツを管理したり公開したりするための容易なインターフェースを持っていることで知られています。REST APIを使用することで、著者は戸惑うことなくこれらのインターフェースを利用することができます。
+
+## プロジェクトマネージメントにおける新しいアプローチ
+
+REST APIによって関心を分離することで、プロジェクトマネージメントを新しい方法に導くことができます。開発者はAPIを使うことで本番データを使用することができ、それぞれのウェブサイトやアプリケーションに集中することができます。
+
+## バックエンドのスペシャリストとしてのWordPress開発者
+
+世界にはバックエンドのスペシャリストとしてのWordPressエンジニアがとても増えています。彼らは、フロントエンドディベロッパーにフロントエンドを任せることで、管理画面やデータベースに集中することができるようになります。
+## WordPressをPHPコミュニティの外側に浸透させる
+
+より大きなサイトの一部のモジュールとしてWordPressを利用できるようにすることで、WordPressは本来のコミュニティの外でも使用されるようになるでしょう。REST APIによって、CMSに責任を持つことなく、どんな言語でもウェブサイトやアプリケーションを開発することが可能になります。
+
+## 役割ごとに集中できる環境
+
+REST APIによって開発者は、ユーザーがしたいことに集中しやすい管理画面を作ることが可能になります。これらは管理者を複雑さから解放し、彼らがすべきことに集中させることができます。
+## WordPressの機能をさらに高める
+
+REST APIはWordPress管理画面の機能を増やすことを容易にします。開発者はクライアントサイドの管理画面の機能を、PHPよりもより高機能でより高いパフォーマンスで作ることができます。
+
 ## Explorations in non-GPL products
-The absolute separation of concerns means that frontend products that retrieve data from the API will not need to be GPL. It’s unlikely, however, that we’ll see a vast increase in API-powered themes due to the challengesof rebuilding native WordPress functionality on the frontend.
+
+関心の分離が意味することは、データがAPI経由で提供されるためにGPLの制約を受けないということです。これはやや残念なことでもありますが、しかしながら私たちはフロントエンドのためのWordPressの仕組みを再構築することが可能になるということです。

@@ -9,7 +9,7 @@
 
 ## 再利用可能でポータブルなコンテンツ
 
-WordPressに保存されたコンテンツはもはやWordPressサイトでだけ使われるわけではありません。REST-APIが導入されたウェブサイトのコンテンツは独立性がありポータブルです。コンテンツの著者は一箇所で記事を入力するだけで大丈夫です。一度記事が書かれて公開されれば、API経由で様々なウェブサイトやサービス、モバイルアプリケーションやデスクチップアプリケーションなどに供給されます。
+WordPressに保存されたコンテンツはもはやWordPressサイトでだけ使われるわけではありません。REST APIが導入されたウェブサイトのコンテンツは独立性がありポータブルです。コンテンツの著者は一箇所で記事を入力するだけで大丈夫です。一度記事が書かれて公開されれば、API経由で様々なウェブサイトやサービス、モバイルアプリケーションやデスクチップアプリケーションなどに供給されます。
 
 ## 関心の分離
 
@@ -20,7 +20,7 @@ WordPressに保存されたコンテンツはもはやWordPressサイトでだ�
 WordPressがここまで成功した理由の一つには、非エンジニアにとって理解しやすいインターフェースがあります。REST APIを使用すれば、新たなフロントエンドテクノロジーを採用する際でも、コンテンツ作者たちがコンテンツを書く環境に頭を悩ませる必要はありません。コンテンツ作者は、フロントエンドが何で作られているかに関係なくWordPressの管理画面を使って記事をコンテンツを書くことができます。大勢のコンテンツ作者がいる場合でも多くの場合見慣れたインターフェースなので、トレーニングなどの必要がなく、すぐにコンテンツを書くことができます。
 ## コンテンツ管理のワークフローの一部としてのWordPress
 
-WordPressは、あなたのウェブサイトやアプリケーションの一部分だけを提供するものとしても優れています。REST APIは、WordPressをWordPressが向いている一部の要素だけで使うことも可能にします。ニューヨークタイムスのScott Taylor氏による「[uses WordPress for its live coverage platform](http://www.slideshare.net/ScottTaylor1/2015-wordcamp-maine-keynote)」で紹介された事例では、WebSocketベースで開発されたサービス経由でReactを使用してREST-APIからデータを受け取っています。2015年の8月に発表された「[the paper even added Slack to its publishing workflow](http://www.niemanlab.org/2015/08/the-new-york-times-live-blogged-last-nights-gop-debate-directly-from-slack/)」では、WordPressをより大きなウェブサイトの一部のモジュールを提供することに特化させることで、小さくて個別の課題に対して、巨大な開発者コミュニティを利用することが可能になったと紹介されています。
+WordPressは、あなたのウェブサイトやアプリケーションの一部分だけを提供するものとしても優れています。REST APIは、WordPressをWordPressが向いている一部の要素だけで使うことも可能にします。ニューヨークタイムスのScott Taylor氏による「[uses WordPress for its live coverage platform](http://www.slideshare.net/ScottTaylor1/2015-wordcamp-maine-keynote)」で紹介された事例では、WebSocketベースで開発されたサービス経由でReactを使用してREST APIからデータを受け取っています。2015年の8月に発表された「[the paper even added Slack to its publishing workflow](http://www.niemanlab.org/2015/08/the-new-york-times-live-blogged-last-nights-gop-debate-directly-from-slack/)」では、WordPressをより大きなウェブサイトの一部のモジュールを提供することに特化させることで、小さくて個別の課題に対して、巨大な開発者コミュニティを利用することが可能になったと紹介されています。
 
 ## 集中保管庫としてのWordPress
 
