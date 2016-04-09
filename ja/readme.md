@@ -27,3 +27,4 @@ Joe Hoyle is the co-founder and CTO of Human Made, where he leads the developmen
 ### Translators (Japanese)
 
 - Takayuki Miyauchi - WordPress REST API Team
+- Shinichi Nishikawa - Nobil Co., Ltd.
