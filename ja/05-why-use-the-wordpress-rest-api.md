@@ -1,10 +1,31 @@
-# Why use the WordPress REST API?
+# なぜ WordPress REST API 使うのか？
 
-*We explore some of the reasons that you may want to use a headless WordPress with the REST API in your own projects, drawing out specific technical and project management- related benefits.*The WordPress REST API allows you to use WordPress as a headless CMS. Developers can interact with WordPress independently of the theme system, using it only as a data storage and delivery platform. There are many benefits to doing this.
+*REST APIを使ってヘッドレスなWordPressをあなたのプロジェクトで採用する際に、プロジェクト管理やテクニカルな部分をどのように引き伸ばしていくかについて考えていきましょう。*
+WordPress REST APIはWordPressをヘッドレスCMSとして利用することを可能にします。開発者はWordPressを既存のテーマシステムから独立させることができ、データの保存と配信のみに特化させることができます。このことには多くのメリットがあります。
 
-## Create context-specific solutionsAround 25% of all websites use WordPress. These websites are PHP-based, with frontends built with the WordPress theme system. The API frees developers and allows them to use any technology that will solve a problem in their specific context. WordPress no longer has to be concerned with the frontend: it can just deliver data to any frontend technology. A developer can take data from a WordPress website and display it using the technologyof their choice, whether that’s for a website, Android application, iOS application or whatever context the data is needed.
+## 目的に応じたソリューションの開発
 
-## Reusable, portable contentThe content entered into WordPress is no longer limited to being displayed on a WordPress website. A REST API-powered website has content which is infinitely portable. Your content authors only need to enter data in one place. Once it has been authored and published in WordPress, it’s now available via the API and can be delivered to websites, web applications, and mobile and desktop applications.## Separation of concernsIn traditional WordPress development, where the frontend and backend are tightly coupled, frontend developers need to be familiar with at least some aspects of WordPress. This makes it difficult to hire and work with purely frontend developers. In a decoupled environment this is no longer a problem. Different teams can work on different parts of a project while having access to the same data: a backend team can work on WordPress and the database, a team can build the frontend in JavaScript or another web technology, you can have an iOS team and an Android team. Your JavaScript developer no longer needs to learn PHP to work with WordPress, and your WordPress developer no longer needs to tinker with JavaScript. This widens the pool of development talent available to work on your website or application, and streamlines project management.
-## Familiar backend for authors and publishersOne of the reasons WordPress has been so successful is that it provides an easy-to-understand interface for non-technical users. With the REST API, you don’t have to decide between using your frontend technology of choice and giving your authors the admin interface they want. Authors and editors can work in the WordPress admin and the data is delivered to the frontend by the API. You have the advantage of providing an admin interface which many authors will already be familiar with, reducing the need for training and re-training, and letting authors quickly start adding content.## Integrate WordPress as one part of a content-authoring workflowWordPress may only be suitable for one aspect of your website or application. The REST API allows you to use WordPress for just those elements that it is suitable for. The New York Times, for example, [uses WordPress for its live coverage platform](http://www.slideshare.net/ScottTaylor1/2015-wordcamp-maine-keynote): data is received via WebSocket from a custom-built service, rendered in React, and served to the frontend via the WordPress REST API. In August 2015, [the paper even added Slack to its publishing workflow](http://www.niemanlab.org/2015/08/the-new-york-times-live-blogged-last-nights-gop-debate-directly-from-slack/). This makes WordPress just one module in a larger stack, making it more available to the wider web development community for smaller, specific tasks.
-## WordPress as a central repositoryThe web is increasingly API-driven, with websites and services aggregating data. The REST API makes it possible for WordPress to be the central place that brings all of this data together. This means that all of your services and data can be centralised while providing your authors with a straightforward interface that they are familiar with. This also provides a standard platform for further functionality with WordPress’ plugin system.
-## Develop with live dataWhen data is exposed through the REST API it can be used by developers in their development environment. Content can be added to the CMS and is available to developers whether they are working on the frontend, the admin, or any applications.
+25%前後のウェブサイトはWordPressを使っています。これらのウェブサイトはWordPressのテーマシステムによってPHPを使用して作られています。APIは開発者にテクノロジーの選択を可能にし、目的に応じた個々の課題を解決することができます。WordPressはもはやフロントエンドに関与する必要がなく、様々なフロントエンドテクノロジーへのデータの供給に集中することができます。開発者はWordPressからのデータを受け取り、好きなフロントエンドで表示することができ、それはウェブサイトであるかどうかでさえも関係ありません。AndroidやiOSなどどのような目的でも何らかのデータは必要とされています。
+
+## 再利用可能でポータブルなコンテンツ
+
+WordPressに保存されたコンテンツはもはやWordPressサイトでだけ使われるわけではありません。REST-APIが導入されたウェブサイトのコンテンツは独立性がありポータブルです。コンテンツの著者は一箇所で記事を入力するだけで大丈夫です。一度記事が書かれて公開されれば、API経由で様々なウェブサイトやサービス、モバイルアプリケーションやデスクチップアプリケーションなどに供給されます。
+
+## 関心の分離
+
+従来のWordPress開発においてはフロントエンドとバックエンドは密接につながっておりフロントエンドディベロッパーはWordPressについても精通している必要がありました。そしてこのことは、純粋なフロントエンドディベロッパーが活躍する場を狭いものとしていました。分離された環境ではこの問題はありません。同じデータにアクセスしている限り、違うパーツに対して違うチームが仕事をすることができます。例えばバックエンドチームはWordPressとそのデータベースに集中し、別のチームはJavaScriptやその他のフロントエンドテクノロジーに集中することができます。AndroidチームやiOSチームなどといったチームといった具合に分けることもできるでしょう。あなたのチーム内のJavaScriptエンジニアはWordPressやPHPについて学ぶ必要はありません。そしてWordPressエンジニアもJavaScriptに手を出す必要がありません。このことであなたのアプリケーションの可能性や、プロジェクトマネージメントを大きく引き延ばすことができるでしょう。
+
+## 見慣れた管理画面
+
+WordPressがここまで成功した理由の一つには、非エンジニアにとって理解しやすいインターフェースがあります。REST APIを使用すれば、新たなフロントエンドテクノロジーを採用する際でも、コンテンツ作者たちがコンテンツを書く環境に頭を悩ませる必要はありません。コンテンツ作者は、フロントエンドが何で作られているかに関係なくWordPressの管理画面を使って記事をコンテンツを書くことができます。大勢のコンテンツ作者がいる場合でも多くの場合見慣れたインターフェースなので、トレーニングなどの必要がなく、すぐにコンテンツを書くことができます。
+## コンテンツ管理のワークフローの一部としてのWordPress
+
+WordPressは、あなたのウェブサイトやアプリケーションの一部分だけを提供するものとしても優れています。REST APIは、WordPressをWordPressが向いている一部の要素だけで使うことも可能にします。ニューヨークタイムスのScott Taylor氏による「[uses WordPress for its live coverage platform](http://www.slideshare.net/ScottTaylor1/2015-wordcamp-maine-keynote)」で紹介された事例では、WebSocketベースで開発されたサービス経由でReactを使用してREST-APIからデータを受け取っています。2015年の8月に発表された「[the paper even added Slack to its publishing workflow](http://www.niemanlab.org/2015/08/the-new-york-times-live-blogged-last-nights-gop-debate-directly-from-slack/)」では、WordPressをより大きなウェブサイトの一部のモジュールを提供することに特化させることで、小さくて個別の課題に対して、巨大な開発者コミュニティを利用することが可能になったと紹介されています。
+
+## 集中保管庫としてのWordPress
+
+ウェブはAPIによってウェブサイトやサービスにデータが提供されるAPIドリブンへと変化しつつあります。WordPress REST APIは、WordPressをデータを取り出すためのハブのようなものとすることを可能にします。このことは、あなたのすべてのウェブサイトのデータを見慣れたインターフェースに集中させることができるということを意味しています。これはさらにWordPressやそのプラグインシステムがスタンダードなプラットフォームとなることを意味しているとも言えるでしょう。
+
+## 本番データによる開発
+
+データがREST APIによって提供されているなら、開発者はそれを開発環境でも使うことができます。コンテンツはCMSで追加することができ、開発者はフロントエンドや管理画面、アプリケーションを問わず、APIによって提供されるデータを使用することができます。
