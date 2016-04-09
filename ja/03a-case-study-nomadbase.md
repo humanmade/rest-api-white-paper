@@ -8,8 +8,6 @@ Joe Hoyle, Nomadbase
 
 ## なぜWordPressとREST APIを使うのか？
 
-WordPress enabled the developers to get the first version of Nomadbase up and running quickly, providing both a stable central platform where data can be aggregated and an API for delivering the data to the frontend.
-
 Nomadbaseの最初のバージョンを立ち上げる際に、WordPressを使うことで開発期間を短くすることができました。WordPressは、データを収集するための中心的な役割と、フロントエンドにデータを提供するためのAPIとしての役割の双方を安定して提供しています。
 
 ## 仕様
