@@ -1,13 +1,27 @@
-# Challenges presented by the REST API
+# REST APIが提供する挑戦
 
-*We explore the challenges that will be brought about by the REST API and discuss some of the ways that these challenges will be addressed both in individual projects and by the wider WordPress community.*The introduction of the REST API marks a new era in WordPress development. Not all the ways that the REST API will change WordPress are clear, but some challenges are already emerging.## Loss of core functionalityA REST API driven website loses frontend features that are linked to the WordPress theme system, like menu management and post previews. Frontend developers need to take responsibility for re-implementing features that come for free with WordPress. If they are not rebuilt, users must do without them. When writing project specifications for an API-driven project, it will become necessary to be very specific about the features that the client needs and not just assume that because they are in WordPress they are available.
+*REST APIによって光を浴びるであろう挑戦や、これらの挑戦が個々のプロジェクトやWordPressコミュニティで活用される方法を考えていきましょう。*
 
-To solve this problem, we anticipate the emergence of REST API base themes that rebuild WordPress features on the frontend. These boilerplate themes will be written in different languages and will provide a starting point for frontend developers to build on.## Disempowers WordPress site buildersIn addition to its ease of use, WordPress’ strength is that it is easy to set up a website. Through WordPress, many people gain experience of PHP, CSS, and HTML, gaining confidence to make changes to the frontend of their website. The REST API completely decouples the frontend from the backend, disempowering those users, and making the frontend only editable by developers.
+REST APIの登場は、WordPressの開発の歴史において新たな時代の幕開けとなりました。REST APIがどのようにWordPressを変えていくかはまだクリアではありませんが、いくつかの挑戦が登場し始めています。
 
-For this reason, it is unlikely that we will see a major disruption to the WordPress theme market. Instead, the REST API will be of most significance to large custom builds and WordPress-based SaaS products.
+## WordPress本体の機能の喪失
 
-## The necessity for structured, portable dataA headless WordPress requires data that can be used across multiple contexts. This means creating and storing it in a way that is completely frontend agnostic. In the first instance, you may just be using data ona website, but you may want to make it available later to a native application. The focus here is on content management as opposed to web publishing. This data needs to be structured in a modular manner, separate to the CSS and HTML. For this reason, REST API- driven sites will not rely on the WYSIWYG capability in TinyMCE for page layouts, instead using content structured by [modular page builders](https://github.com/humanmade/modular-page-builder).WordPress’ commitment to backwards (and forwards) compatibility ensures that data produced by the API will continue to be readable and usable well into the future. This means that you can safely store it knowing that it will continue to be available through a well-supported API. In addition, the WordPress REST API is open, ensuring that your data can be moved out of your site using standard tools.## Dealing with progressive enhancement
-![a diagram showing WordPress data delivered to the frontend via an intermediary node.js server](images/progressive.png)
-In an increasingly JavaScript-driven world, progressive enhancement is a challenge that has to be addressed. Some people have JavaScript disabled in their browser, either because they use assistance technologies, because of personal preference, or because the organisation they work for requires it to be turned off. If content from a REST API driven WordPress website is delivered to a JS- powered frontend, these people will simply see a blank page.
+メニューの管理や投稿のプレビューなど、REST API駆動のウェブサイトでは、WordPressのテーマシステムに基づいた幾つかの機能がありません。フロントエンドディベロッパーは、WordPressにあったいくつかのフロントエンドの機能を再構築する必要があります。もしそれがなければユーザーがそれをしなければなりません。API駆動のプロジェクトのための仕様を考える際には、WordPressの機能やクライアントのニーズを満たすものである必要があります。
 
-Developers need to address these issues to ensure that the web stays accessible. One method is to render frontend templates on the server using a technology like Node. js, and then enhance the website on the frontend using client- side JavaScript. This setup, however, requires an additional server, and developers with the experience to implement it.
+この問題を解決するために、私たちはWordPressの機能をフロントエンドで再現するためのRET APIベースのテーマシステムが現れるであろうことを予測しています。これらの汎用的なテーマは異なる言語で記述され、フロントエンドエンジニアが何かを開発するための起点となるでしょう。
+## WordPressサイト制作者の負担を減らす
+
+WordPressは、その使いやすさ以外にもセットアップが容易であるという強みがあります。WordPressを通して多くの人々がPHPやCSS、HTMLのスキルを習得し、それによって彼らのウェブサイトのフロントエンドが改善されています。REST APIはフロントエンドとバックエンドを完全に分離するので、ユーザーの負担を減らし、フロントエンドを開発者のみが編集可能となります。
+
+このことで、WordPressのテーママーケットに大きな混乱を引き起こすとは思っていません。代わりに、カスタムビルドでWordPressベースのREST APIのSaaSサービスが出現するでしょう。
+
+## 構造化されたポータブルデータの必要性
+
+ヘッドレスなWordPressでは、データが複数の目的で使用できる必要があります。このことはフロントエンドは、データがどのように作られてどのように保存されるかについて知る必要がないことを意味しています。例えば、あなたがデータをウェブサイトで使っており、しかしその後ネイティブアプリケーションからも使いたいと考えたとします。このとき重要なのはコンテンツ管理がウェブサイトとは違うことです。この際のデータはモジュール風に分けられ、HTMLとCSSも分割されている必要があります。その理由はAPI駆動のウェブサイトはTinyMCEによるWYSIWYGエディターのページレイアウトでは対応できないケースがあるためです。このようなケースでは、[modular page builders](https://github.com/humanmade/modular-page-builder)を使用することをおすすめします。
+WordPressが保証する後方互換性は、APIによるデータが将来においても利用可能であることを保証しています。このことによってデータを安心して保存できる信頼性の高いAPIであると言えます。さらに、WordPressのREST APIはオープンであり、標準的なツールでデータを使用することができます。
+## プログレッシブエンハンスメントへの対応
+![WordPressデータをNode.jsサーバー経由でフロントエンドに配信する](images/progressive.png)
+
+JavaScriptの世界では、プログレッシブエンハンスメントは取り組むべき重要な課題です。様々な理由によりJavaScriptを無効化しているユーザーがいます。REST APIを使用してJavaScriptで動作しているウェブサイトは、これらの人々には単に真っ白なページが表示されるだけです。
+
+開発者はアクセシブルなウェブサイトを作る努力をする必要があります。一つの方法として、Node.jsベースでサーバーサイドのテンプレートを使用してページを表示することです。そしてクライアントサイドのJavaScriptと組み合わせてよりよいサイトにしましょう。ただしこのためには追加のサーバーとその経験がある開発者が必要となります。
