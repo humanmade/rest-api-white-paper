@@ -1,12 +1,15 @@
-# Case Study: ustwo
+# 事例: ustwo
 
-*[ustwo](http://ustwo.com) wanted a decoupled website with a WordPress backend and a frontend built with React.*> We chose WordPress as we wanted to have an established open source CMS so that we can be confident that we’ll never be left without support or ability to change. To fulfil our design ambitions we decided to build our frontend as a single-page application, which was made possible with the emerging WP-API.
+*[ustwo](http://ustwo.com)は、Reactを使ってウェブサイトをWordPressのバックエンドとフロントエンドに分離。*
+
+私たちは、オープンソースCMSであるWordPressに対するサポートや貢献を今後も継続していきたいと強く思っており、WordPressを選択しました。デザインには非常に重きを置いており、これを満足させるためにシングルページアプリケーションを選択しましたが、これはWP-APIによって可能になりました。
 Daniel Demmel, ustwo
 
-![a diagram showing the ustwo architecture](images/ustwo-architecture.png)Source: ustwo
-## The build
-The ustwo website is a single-page application: the frontend is built using React and WordPress manages the content. React was used because it allows for
-isomorphic rendering (pages can be rendered on the server or by the client). There is a Node.js server that enables server-side rendering.
+![ustwoの仕組み](images/ustwo-architecture.png)
+出展: ustwo
 
-On the WordPress side, a [custom page builder plugin](https://github.com/mattheu/modular-page-builder) gets authors to enter content in a modular fashion. This ensures that the content is modular and portable to different contexts.
-The infrastructure for the REST API is used along with a bespoke API comprising custom endpoints that deliver content in JSON format to the frontend.
+## 仕組み
+
+ustwoのウェブサイトはシングルページアプリケーションです。フロントエンドはReactを使用して構築されており、コンテンツの管理にWordPressが使用されています。Reactが使用されたのは、それがisomorphic rendering（ページがサーバーでもクライアントでもレンダリングできる）を可能としているからです。Node.jsによるサーバーがあり、これがサーバーサイドによるレンダリングを可能にしているのです。
+
+WordPress側では、[カスタムページビルダー](https://github.com/mattheu/modular-page-builder)を使用してコンテンツをモジュール風に投稿できるようにしています。このことでコンテンツを目的に応じてポータブルに使用できるようにしています。REST APIによるインフラは、JSONフォーマットでフロントエンドにコンテンツを提供するためのカスタムエンドポイントとしても使用されています。
