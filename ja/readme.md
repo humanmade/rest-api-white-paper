@@ -15,8 +15,6 @@
 
 Tom WillmotはHuman Madeの出資者であり最高経営責任者です。彼はエンタープライズ市場におけるオープンソースソフトウエアの経験が10年以上あります。彼は彼の妻と娘とともにロンドンで暮らしています。
 
-Joe Hoyle is the co-founder and CTO of Human Made, where he leads the development team and the overall technical direction of the company. He is a member of the WordPress REST API development team
-
 Joe HoyleはHuman Madeの出資者であり最高技術責任者で、社内のすべての技術開発と開発チームをリードしています。彼はWordPress REST APIチームのメンバーでもあります。
 
 ### 貢献者
