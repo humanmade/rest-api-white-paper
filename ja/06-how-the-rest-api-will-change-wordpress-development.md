@@ -1,4 +1,4 @@
-# REST APIがどのようにWordPress開発を変えるか
+# REST APIがどのようにWordPressによる開発を変えるのか
 
 *REST APIが、WordPress開発の手法や、WordPressベースのウェブサイト、そしてアプリケーションをそれらを作る人にとってどのように変えていくかを見ていきましょう。*
 
