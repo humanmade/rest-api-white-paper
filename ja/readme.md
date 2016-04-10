@@ -4,9 +4,9 @@
 ### Contents
 1. はじめに
 2. ヘッドレスCMS
-3. REST APIとは？
-4. WordPress REST API とは何か
-5. なぜ WordPress REST API 使うのか？
+3. REST APIとは
+4. WordPress REST APIとは何か
+5. なぜWordPress REST APIを使うのか
 6. REST APIがどのようにWordPressによる開発を変えるのか
 7. REST APIをきっかけにした挑戦
 8. 参考資料

@@ -1,4 +1,4 @@
-# WordPress REST API とは何か
+# WordPress REST APIとは何か
 
 ![REST API のアーキテクチャの図](images/REST API diagram.png)
 
