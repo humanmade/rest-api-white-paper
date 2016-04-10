@@ -1,7 +1,13 @@
-# Case Study: npm
-*[npm](http://npmjs.com) wanted to use the REST API to deliver custom brochure pages and upsell boxes on their website.*
-> Security was of paramount importance to us and as a result, we needed a headless WP instance hosted under the same constraints as in our production environment. This meant reliance on the WordPress API to deliver authored content via JSON to our build, giving us the ability to parse and display CMS-generated content without having to grant access to any non-whitelisted IP Addresses.
+# 事例: npm
+*[npm](http://npmjs.com)は、モジュールの紹介ページやアップセル用のボックスをREST API経由で配信したいと考えました。*
 
-Nick Cawthon, npm## Why use WordPress and the REST API?npm wanted to use WordPress as a central repository for their documentation and their product pages. Its straightforward interface means that content authors can easily add data, which is delivered to the client in JSON format.
+> セキュリティは私たちにとって最優先の課題で、ヘッドレスなWordPressを同じ本番環境にインストールする必要があります。これによってホワイトリストによるIP アドレスの許可を行わなくても、WordPress APIから取得したJSONをパースしてコンテンツを表示しています。
 
-## The buildThe npm website has a WordPress backend and admin. A bespoke API built of custom endpoints serves content in JSON format to a Node.js server. This renders the final HTML and sends it to the browser where Handlebars renders the templates. The API doesn’t just send the data: it sends rendered HTML along with scripts and stylesheets. This is cached by the Node.js server so that the website stays up even if WordPress is unavailable. It also means that the website stays fast without having to expend effort scaling the database.Some customisations recreate the post preview feature of WordPress. Parts of the CSS templates and handlebars frontend are used to create a basic WordPress theme which authors use to preview posts before they are published and pushed to the frontend.
+Nick Cawthon, npm## なぜWordPressとREST APIを使っているのですか？
+
+npmは、ドキュメンテーションやプロダクトのページのためにWordPressをセントラルハブのように使いたいと考えました。それによってコンテンツの著者が簡単にデータを追加できるようになり、クライアントにJSONで配信されます。
+
+## 仕組み
+
+npmのウェブサイトはWordPressによるバックエンドと管理画面を持っています。カスタムメイドのエンドポイントによるコンテンツはJSONフォーマットでNode.jsサーバーに届けられます。これは最終的にHandlebarsというテンプレートエンジンによってレンダリングされ、ブラウザに送られています。APIは単にデータを送るだけでなくレンダリングされたHTMLやJavaScript、CSSも送っています。これはNode.jsサーバーによってキャッシュされ、WordPressが動作していない時でもウェブサイトは稼働します。それによってデータベースのスケーリングを行わなくてもウェブサイトが高速に動作するようになっています。
+WordPressの投稿のプレビューなどいくつかの機能はカスタマイズされています。CSSとHandlebarsテンプレートにより基本的なWordPressテーマが作られており、これによって著者たちは記事を公開する前にコンテンツのプレビューが可能になっています。
