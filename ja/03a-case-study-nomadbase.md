@@ -12,8 +12,8 @@ Nomadbaseの最初のバージョンを立ち上げる際に、WordPressを使�
 
 ## 仕様
 
-Nomadbaseは、Facebook、Swarm、Twitter、Instagram、そしてTripItのAPIを使用して、それらから得た位置情報を集約しています。このデータはMySQL内のカスタムテーブル内に保存されます。その後このデータは、REACTベースで構築されたフロントエンドからREST API経由で使用され、ブラウザに表示されます。地図上にオーバレイを作成するには、[Leaflet](http://leafletjs.com/)を使用しています。
+Nomadbaseは、Facebook、Swarm、Twitter、Instagram、そしてTripItのAPIを使用して、それらから得た位置情報を集約しています。このデータはMySQL内のカスタムテーブル内に保存されます。その後このデータは、REACTベースで構築されたフロントエンドからREST API経由で使用されブラウザに表示されます。地図上にオーバレイを作成するには[Leaflet](http://leafletjs.com/)を使用しています。
 
-新しいユーザーがNomadbaseにサインアップする際には、5つの異なるソーシャルネットワークからのリクエストを受けます。これは大きなバックグラウンドプロセスを必要とします。これを高速化するためにwp-cronを、Human Madeによって大規模WordPressサイト向けに開発された[Cavalcade](https://github.com/humanmade/Cavalcade)というシステムツールに置き換えています。
+新しいユーザーがNomadbaseにサインアップする際には5つの異なるソーシャルネットワークからのリクエストを受けます。これには大きなバックグラウンドプロセスを必要とします。これを高速化するために、wp-cronをHuman Madeによって大規模WordPressサイト向けに開発された[Cavalcade](https://github.com/humanmade/Cavalcade)というシステムツールに置き換えています。
 
 Nomadbaseの次のステップは、ブラウザベースのアプリのコードを再利用したReact NativeベースのiOSアプリです。すべてのデータとユーザーのアクションはREST APIによって実現しています。新しいアプリケーションを開発するのに際して、新たなバックエンドは必要ありません。
